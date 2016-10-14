@@ -1,19 +1,17 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
+
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.8'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'rspec-rails', '2.13.1'
-  gem 'minitest'
-  gem 'test-unit'
+  gem 'rspec-rails'
 end
 
 group :test do
-  gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'selenium-webdriver'
+  gem 'capybara'
 end
 
 gem 'sass-rails', '4.0.3'
@@ -28,6 +26,6 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
+  gem 'pg'
   gem 'rails_12factor', '0.0.2'
 end
